@@ -1,0 +1,363 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+*:focus {
+  outline: none;
+}
+body {
+  min-height: 100vh;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  background-color: #fafafa;
+}
+
+/* NAVBAR */
+header {
+  height: 70px;
+  background-color: #fafafa;
+  border-bottom: 1px solid #ccc;
+  position: fixed;
+  width: 100%;
+  z-index: 22;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 12.5em;
+  align-items: center;
+  height: 100%;
+}
+nav img {
+  width: 100px;
+  object-fit: contain;
+}
+input {
+  border: 1px solid #ccc;
+  padding: 8px 20px;
+  border-radius: 4px;
+  background-color: #fff;
+  font-weight: 400;
+}
+input::placeholder {
+  color: #ccc;
+}
+.nav-icons {
+  display: flex;
+  gap: 2em;
+}
+svg:hover {
+  cursor: pointer;
+}
+.circle {
+  background-color: #000;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: url("./profile-img.jpeg") no-repeat center center / cover;
+}
+/* MAIN */
+section {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  place-items: center;
+  height: auto;
+}
+.left-col {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+}
+.rectangle {
+  background-color: #fafafa;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 630px;
+  height: 110px;
+  overflow: hidden;
+  padding: 20px;
+  margin: auto;
+  overflow-x: auto;
+}
+
+.story-img img {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  object-fit: contain;
+  border: 3px solid transparent;
+  background-image: linear-gradient(white, white),
+    radial-gradient(circle at top left, red, orange);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  border-radius: 50%;
+}
+.rectangle::-webkit-scrollbar {
+  display: none;
+}
+.story-img {
+  display: flex;
+  gap: 2em;
+}
+.white {
+  background-color: #fff;
+}
+.story-name {
+  display: flex;
+  font-size: 14px;
+  gap: 2em;
+}
+.story-name p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  margin-left: -8px;
+  align-self: center;
+  color: rgb(114, 114, 114);
+  justify-self: center;
+}
+/* POSTS-CARDS */
+.card-1,
+.card-2,
+.card-3,
+.card-4,
+.card-5,
+.card-6,
+.card-7 {
+  border: 1px solid #ccc;
+  width: 630px;
+  border-radius: 2px;
+  margin: 0px auto 20px auto;
+}
+.cards img {
+  width: 100%;
+  object-fit: cover;
+}
+.cards {
+  width: 100%;
+  margin: 50px auto;
+  position: relative;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  padding: 0px 10px;
+  background-color: #fff;
+}
+.img-name {
+  display: flex;
+  gap: 1.2em;
+}
+.img-name p {
+  align-self: center;
+}
+.img-name img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.dots {
+  font-weight: bold;
+  font-size: 1.6em;
+  cursor: pointer;
+  color: rgb(46, 46, 46);
+}
+.post-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 10px;
+  background-color: #fff;
+}
+.lcs {
+  display: flex;
+  gap: 8px;
+}
+.likes,
+.name {
+  margin: 15px 10px;
+  background-color: #fff;
+}
+.bottom-post {
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  width: 100%;
+  border-top: 1px solid #ccc;
+  padding: 0px 10px;
+  background-color: #fff;
+}
+.bottom-post p {
+  display: flex;
+  align-items: center;
+  color: #7ec8f8;
+  cursor: pointer;
+}
+.smile-input {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.smile-input input {
+  border: none;
+  font-size: 1em;
+  font-weight: 400;
+}
+.para-styling {
+  margin: 15px 10px;
+  cursor: pointer;
+}
+
+/* Right-col */
+.right-col {
+  position: fixed;
+  top: 130px;
+  left: 66%;
+  display: flex;
+  flex-direction: column;
+
+  gap: 1em;
+  width: 400px;
+}
+.pro-pic img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.switch {
+  color: #2fabfd;
+  cursor: pointer;
+}
+.pro-pic {
+  display: flex;
+  height: 80px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.pro-flex {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 1.2em;
+}
+.pro-text {
+  display: flex;
+  justify-content: space-between;
+}
+.pro-text p:nth-child(1) {
+  color: rgb(177, 177, 177);
+}
+.one img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.one {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.sg-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.follow {
+  color: #2fabfd;
+}
+.footer {
+  color: rgb(177, 177, 177);
+  font-size: 11px;
+  width: 400px;
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 5px;
+}
+.footer p {
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+}
+.copy {
+  font-weight: 400;
+  color: rgb(177, 177, 177);
+  font-size: 15px;
+}
+.right-col p {
+  cursor: pointer;
+}
+@media (max-width: 700px) {
+  main {
+    grid-template-columns: 100%;
+    display: grid;
+  }
+  .right-col {
+    display: none;
+  }
+  .card-1,
+  .card-2,
+  .card-3,
+  .card-4,
+  .card-5,
+  .card-6,
+  .card-7 {
+    border: 1px solid #ccc;
+    width: 100vw;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: -30px auto 20px auto;
+  }
+  .rectangle {
+    background-color: #fafafa;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 5px;
+    width: 100vw;
+    height: 110px;
+    overflow: hidden;
+    padding: 20px;
+    margin: auto;
+    overflow-x: auto;
+  }
+  .story-name {
+    display: flex;
+    font-size: 14px;
+  }
+  nav {
+    justify-content: space-between;
+    margin: auto 15px;
+    gap: 0px;
+  }
+  .nav-icons {
+    gap: 1em;
+  }
+  .home,
+  .find,
+  .heart {
+    display: none;
+  }
+  .input-head {
+    width: 140px;
+  }
+}
